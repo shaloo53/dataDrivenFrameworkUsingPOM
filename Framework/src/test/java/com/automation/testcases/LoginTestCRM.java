@@ -20,7 +20,7 @@ public class LoginTestCRM extends BaseClass {
 		looger.info("url launched");
 		loginPage.clickOnLoginButton();
 		loginPage.loginToCRM(excelReader.getDataFromExcelSheet(0,0),excelReader.getDataFromExcelSheet(0,1));
-		assertTrue(loginPage.geterrorMessageWhileLogIn().contains("Invalid login"), "Verify the error mesaage.");
+		assertTrue(loginPage.geterrorMessageWhileLogIn().contains("Invalidlogin"), "Verify the error mesaage.");
 		looger.pass("login success");
 		
 	}
