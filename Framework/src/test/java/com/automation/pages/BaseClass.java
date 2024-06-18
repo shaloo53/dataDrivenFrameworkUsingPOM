@@ -48,7 +48,7 @@ public class BaseClass {
 	}
 
 	@AfterMethod
-	public void tearDonwMethod(ITestResult result) {
+	public void tearDownMethod(ITestResult result) {
 		if (result.getStatus() == ITestResult.FAILURE) {
 			String methodName = result.getName();
 			File f = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
