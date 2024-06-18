@@ -20,8 +20,8 @@ import com.automation.utility.ExcelReader;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
-import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
-import com.google.common.io.Files;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+
 
 public class BaseClass {
 	public WebDriver driver;
@@ -30,16 +30,13 @@ public class BaseClass {
 	public ExtentReports reports;
 	public ExtentTest looger;
 
-	@SuppressWarnings("deprecation")
 	@BeforeSuite
 	public void setupSuite() throws IOException {
 		excelReader = new ExcelReader();
 		config = new ConfigDataProvider();
 		reports = new ExtentReports();
-		ExtentHtmlReporter htmlreport = new ExtentHtmlReporter(
-				new File(System.getProperty("user.dir") + "/Reports/FreeCRM.html"));
-		reports.attachReporter(htmlreport);
-
+		ExtentSparkReporter spark = new ExtentSparkReporter(new File(System.getProperty("user.dir") + "/Reports/FreeCRM.html"));
+		reports.attachReporter(spark);
 	}
 
 	@BeforeClass
