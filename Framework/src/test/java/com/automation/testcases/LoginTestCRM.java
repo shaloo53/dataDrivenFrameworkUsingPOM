@@ -3,17 +3,15 @@ package com.automation.testcases;
 import org.testng.annotations.Test;
 import static org.testng.Assert.assertTrue;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
 import com.automation.pages.BaseClass;
 import com.automation.pages.LoginPage;
-import com.aventstack.extentreports.Status;
+import com.automation.utility.RerunAutomationScript;
 
+@Test(retryAnalyzer = RerunAutomationScript.class)
 public class LoginTestCRM extends BaseClass {
 	
-	@Test
 	public void verifyUserAbleToLaunchTheURL() throws InterruptedException {
 		looger = reports.createTest("Login To CRM");
 		LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
