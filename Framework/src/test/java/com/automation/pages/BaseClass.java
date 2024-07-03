@@ -25,14 +25,14 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 public class BaseClass {
 	public WebDriver driver;
-	public ExcelReader excelReader;
+	public DataProviderExcel dataProviderExcel;
 	public ConfigDataProvider config;
 	public ExtentReports reports;
 	public ExtentTest looger;
 
 	@BeforeSuite
 	public void setupSuite() throws IOException {
-		excelReader = new ExcelReader();
+		dataProviderExcel = new DataProviderExcel();
 		config = new ConfigDataProvider();
 		reports = new ExtentReports();
 		ExtentSparkReporter spark = new ExtentSparkReporter(new File(System.getProperty("user.dir") + "/Reports/FreeCRM.html"));
@@ -52,7 +52,7 @@ public class BaseClass {
 			String path = System.getProperty("user.dir") + "/screenshot/" + methodName + ".jpg";
 			try {
 				FileUtils.copyFile(f, new File(path));
-				looger.fail("login fail", MediaEntityBuilder.createScreenCaptureFromPath(path).build());
+				looger.fail("fail", MediaEntityBuilder.createScreenCaptureFromPath(path).build());
 
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
