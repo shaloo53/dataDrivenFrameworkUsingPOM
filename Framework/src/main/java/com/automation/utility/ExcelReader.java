@@ -25,4 +25,12 @@ public class ExcelReader {
 		String value = wb.getSheetAt(0).getRow(row).getCell(column).getStringCellValue();
 		return value;
 	}
+	public int totalRow() {
+		return wb.getSheetAt(0).getPhysicalNumberOfRows();
+	}
+	public int totalColumn() {
+		int columnSize = 0;
+		columnSize = wb.getSheetAt(0).getRow(0).getPhysicalNumberOfCells();
+		return columnSize;
+		}
 }
