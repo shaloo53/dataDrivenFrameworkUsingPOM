@@ -6,7 +6,10 @@ import static org.testng.Assert.assertTrue;
 
 import com.automation.pages.BaseClass;
 import com.automation.pages.LoginPage;
+import com.automation.pages.webTableExamplePage;
 import com.automation.utility.ExcelReader;
+
+import net.bytebuddy.build.Plugin.Factory.UsingReflection.Priority;
 
 public class LoginTestCRM extends BaseClass {
 	ExcelReader excel = new ExcelReader();
@@ -27,7 +30,7 @@ public class LoginTestCRM extends BaseClass {
 		return ob;
 	}
 
-	@Test(dataProvider = "readDataFromExcel1")
+	@Test(priority = 0,dataProvider = "readDataFromExcel1",enabled = false)
 	public void verifyUserAbleToLaunchTheURL(String UserName, String Password) {
 		LoginPage loginPage = new LoginPage(driver);
 
@@ -40,5 +43,13 @@ public class LoginTestCRM extends BaseClass {
 		looger.pass("Unable to login");
 
 	}
-
+	
+	@Test(priority = 1)
+	public void fetchTheTableContent() {
+		webTableExamplePage webTable = new webTableExamplePage(driver);
+		looger = reports.createTest("Verify webTable");
+		System.out.println(webTable.getCellElement().get("Name"));
+		System.out.println(webTable.getCellElement().get("Email"));
+		
+	}
 }

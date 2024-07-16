@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="com.automation.utility.RetryMethodAtRunTime"/>
-  </listeners>
-  <test thread-count="5" name="Test(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="com.automation.testcases.LoginTestCRM">
         <methods>
           <include name="setupSuite"/>
           <include name="tearDownAfterSuite"/>
-          <include name="verifyUserAbleToLaunchTheURL"/>
           <include name="setUp"/>
+          <include name="fetchTheTableContent"/>
           <include name="tearDownMethod"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.automation.testcases.LoginTestCRM -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

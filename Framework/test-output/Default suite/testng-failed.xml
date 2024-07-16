@@ -7,8 +7,8 @@
         <methods>
           <include name="setupSuite"/>
           <include name="tearDownAfterSuite"/>
-          <include name="verifyUserAbleToLaunchTheURL" invocation-numbers="1"/>
           <include name="setUp"/>
+          <include name="fetchTheTableContent"/>
           <include name="tearDownMethod"/>
           <include name="tearDown"/>
         </methods>

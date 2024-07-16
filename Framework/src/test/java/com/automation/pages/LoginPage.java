@@ -8,6 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.asserts.SoftAssert;
 
 public class LoginPage {
 WebDriver driver;
@@ -43,6 +44,7 @@ WebDriverWait wait;
 		name.sendKeys(uname);
 		pass.sendKeys(pswd);
 		login.click();
+		
 	}
 
 	
