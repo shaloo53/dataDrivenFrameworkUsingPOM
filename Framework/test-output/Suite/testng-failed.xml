@@ -10,9 +10,9 @@
         <methods>
           <include name="setupSuite"/>
           <include name="tearDownAfterSuite"/>
-          <include name="verifyUserAbleToLaunchTheURL"/>
           <include name="setUp"/>
           <include name="tearDownMethod"/>
+          <include name="fetchTheTableContent"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.automation.testcases.LoginTestCRM -->

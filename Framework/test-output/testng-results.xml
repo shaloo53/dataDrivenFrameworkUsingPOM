@@ -2,51 +2,39 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-03T17:03:59 IST" name="Suite" finished-at="2024-07-03T17:05:44 IST" duration-ms="104484">
+  <suite started-at="2024-07-11T01:30:57 IST" name="Suite" finished-at="2024-07-11T01:31:15 IST" duration-ms="17763">
     <groups>
     </groups>
-    <test started-at="2024-07-03T17:03:59 IST" name="Test" finished-at="2024-07-03T17:05:44 IST" duration-ms="104484">
+    <test started-at="2024-07-11T01:30:57 IST" name="Test" finished-at="2024-07-11T01:31:15 IST" duration-ms="17763">
       <class name="com.automation.testcases.LoginTestCRM">
-        <test-method is-config="true" signature="setupSuite()[pri:0, instance:com.automation.testcases.LoginTestCRM@68105edc]" started-at="2024-07-03T17:03:59 IST" name="setupSuite" finished-at="2024-07-03T17:03:59 IST" duration-ms="155" status="PASS">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:com.automation.testcases.LoginTestCRM@511816c0]" started-at="2024-07-11T01:30:57 IST" name="setupSuite" finished-at="2024-07-11T01:30:57 IST" duration-ms="165" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupSuite -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.testcases.LoginTestCRM@68105edc]" started-at="2024-07-03T17:03:59 IST" name="setUp" finished-at="2024-07-03T17:05:36 IST" duration-ms="96716" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.testcases.LoginTestCRM@511816c0]" started-at="2024-07-11T01:30:57 IST" name="setUp" finished-at="2024-07-11T01:31:09 IST" duration-ms="12654" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyUserAbleToLaunchTheURL(java.lang.String,java.lang.String)[pri:0, instance:com.automation.testcases.LoginTestCRM@68105edc]" started-at="2024-07-03T17:05:36 IST" name="verifyUserAbleToLaunchTheURL" data-provider="readDataFromExcel1" finished-at="2024-07-03T17:05:44 IST" duration-ms="7465" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Srishti]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Sri]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="fetchTheTableContent()[pri:1, instance:com.automation.testcases.LoginTestCRM@511816c0]" started-at="2024-07-11T01:31:09 IST" name="fetchTheTableContent" finished-at="2024-07-11T01:31:14 IST" duration-ms="4858" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyUserAbleToLaunchTheURL -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.automation.testcases.LoginTestCRM@68105edc]" started-at="2024-07-03T17:05:44 IST" name="tearDownMethod" finished-at="2024-07-03T17:05:44 IST" duration-ms="3" status="PASS">
+        </test-method> <!-- fetchTheTableContent -->
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.automation.testcases.LoginTestCRM@511816c0]" started-at="2024-07-11T01:31:14 IST" name="tearDownMethod" finished-at="2024-07-11T01:31:14 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyUserAbleToLaunchTheURL status=SUCCESS method=LoginTestCRM.verifyUserAbleToLaunchTheURL(java.lang.String,java.lang.String)[pri:0, instance:com.automation.testcases.LoginTestCRM@68105edc] output={null}]]]>
+                <![CDATA[[TestResult name=fetchTheTableContent status=SUCCESS method=LoginTestCRM.fetchTheTableContent()[pri:1, instance:com.automation.testcases.LoginTestCRM@511816c0] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.testcases.LoginTestCRM@68105edc]" started-at="2024-07-03T17:05:44 IST" name="tearDown" finished-at="2024-07-03T17:05:44 IST" duration-ms="211" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.testcases.LoginTestCRM@511816c0]" started-at="2024-07-11T01:31:14 IST" name="tearDown" finished-at="2024-07-11T01:31:15 IST" duration-ms="216" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDownAfterSuite()[pri:0, instance:com.automation.testcases.LoginTestCRM@68105edc]" started-at="2024-07-03T17:05:44 IST" name="tearDownAfterSuite" finished-at="2024-07-03T17:05:44 IST" duration-ms="348" status="PASS">
+        <test-method is-config="true" signature="tearDownAfterSuite()[pri:0, instance:com.automation.testcases.LoginTestCRM@511816c0]" started-at="2024-07-11T01:31:15 IST" name="tearDownAfterSuite" finished-at="2024-07-11T01:31:15 IST" duration-ms="666" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownAfterSuite -->
